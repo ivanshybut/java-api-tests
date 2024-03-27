@@ -8,7 +8,7 @@ public class FirstTest {
     public void testTwoLessThanThree(){
         int a = 2;
         int b = 3;
-        Assertions.assertTrue(a<b);
+        Assertions.assertTrue(a<b, "Число " + a + " больше числа " + b);
 
     }
 }
