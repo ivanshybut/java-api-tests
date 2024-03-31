@@ -1,9 +1,27 @@
 package tests;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDateTime;
+
 public class FirstTest {
+
+    private String name;
+    @BeforeEach
+
+    public void before(){
+        name = "Name is " + LocalDateTime.now();
+        System.out.println(name);
+    }
+
+    @AfterEach
+    public void after(){
+        System.out.println("Test end");
+    }
+
     @Test
     public void testTwoLessThanThree(){
         int a = 2;
