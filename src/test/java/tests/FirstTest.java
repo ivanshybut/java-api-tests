@@ -29,4 +29,19 @@ public class FirstTest {
         Assertions.assertTrue(a<b, "Число " + a + " больше числа " + b);
 
     }
+
+    @Test
+    public void testTwoPlusTwoEqualFour(){
+        Assertions.assertEquals(4, 2 +2);
+    }
+
+    @Test
+    public void testOnePlusThreeEqualFour(){
+        Assertions.assertEquals(4, 1+3);
+    }
+
+    @Test
+    public void testZeroPlusFourEqualFour(){
+        Assertions.assertEquals(4, 0 + 4);
+    }
 }
