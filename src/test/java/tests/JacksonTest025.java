@@ -1,6 +1,7 @@
 package tests;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import models.Cat;
 import models.People;
 import org.junit.jupiter.api.Test;
 
@@ -17,6 +18,11 @@ public class JacksonTest025 {
         System.out.println(people.getName());
         System.out.println(people.getAge());
         System.out.println(people.getGender());
+
+
+        File cat = new File("src/test/resources/cat.json");
+        Cat barsik = objectMapper.readValue(cat, Cat.class);
+        System.out.println(barsik);
 
 //из объект в json
         People sasha = new People("sasha", 10, "female");
