@@ -6,6 +6,7 @@ public class CatTests {
 
     @Test
     public void catTest(){
-        Cat cat = new Cat();
+        Cat cat = new Cat("barsik", "Egypt");
+        System.out.println(cat);
     }
 }

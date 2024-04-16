@@ -1,5 +1,8 @@
 package models;
 
+import lombok.ToString;
+
+@ToString
 public class Cat {
     private String name;
 
@@ -7,6 +10,16 @@ public class Cat {
 
     public Cat(String name, String model){
         this.name = name;
-        this.model = model
+        this.model = model;
     }
+
+    public Cat(){
+
+    }
+
+
+
+
+
 }
+
