@@ -1,8 +1,10 @@
 package models;
 
+import lombok.Builder;
 import lombok.ToString;
 
 @ToString
+
 public class Cat {
     private String name;
 
@@ -16,10 +18,6 @@ public class Cat {
     public Cat(){
 
     }
-
-
-
-
 
 }
 
