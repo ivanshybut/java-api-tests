@@ -4,5 +4,8 @@ public class First005 {
        String name = "Ivan";
        String formatName = String.format("My name is %s and my age is %d", name, age);
        System.out.println(formatName);
+
+       String replaceName = formatName.replace("Ivan", "John");
+       System.out.println(replaceName);
     }
 }
